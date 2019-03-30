@@ -27,7 +27,5 @@ public class ItemController {
     @RequestMapping("/items")
     public ResponseObject<Item> queryItem(@RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "25") int limit){
         return  itemService.queryItem(page,limit);
-
-
     }
 }
